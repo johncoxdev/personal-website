@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,8 +8,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'michroma': ['var(--michroma)'],
+        'exo': ['var(--exo)']
+      },
+      colors: {
+        'black': '#000000',
+        'white': '#ffffff',
+        'dark-babyblue': '#41BAE0',
+        'babyblue': '#6CDBEA',
+        'blurple': '#2703B8',
+        'purple': '#751E9E',
+        'galactic-purple': '#30278F'
+      },
       animation: {
-        text: 'text 3s ease infinite',
+        text: 'text 3s ease-out infinite',
       },
       keyframes: {  
         text: {
