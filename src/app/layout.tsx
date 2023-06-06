@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${exo.className}`}>{children}</body>
+      <body className={`${exo.variable} ${michroma.variable}`}>{children}</body>
     </html>
   )
 }

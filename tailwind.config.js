@@ -8,9 +8,24 @@ module.exports = {
   ],
   theme: {
     extend: {
+      blur: {
+        '4xl': '72px', 
+        '5xl': '152px',
+        '6xl': '204px'
+      },
+      height: { 
+        '100': '26rem',
+        '114': '28rem',
+        '128': '32rem'
+      },
+      width: {
+        '100': '26rem',
+        '114': '28rem',
+        '128': '32rem'
+      },
       fontFamily: {
-        'michroma': ['var(--michroma)'],
-        'exo': ['var(--exo)']
+        'michroma': ['var(--michroma)', 'sans-serif'],
+        'exo': ['var(--exo)', 'sans-serif']
       },
       colors: {
         'black': '#000000',
@@ -22,10 +37,10 @@ module.exports = {
         'galactic-purple': '#30278F'
       },
       animation: {
-        text: 'text 3s ease-out infinite',
+        'animate-text': 'animate-text 3s ease-out infinite',
       },
       keyframes: {  
-        text: {
+        'animate-text': {
           '0%, 100%': {
             'background-size': '200% 200%',
             'background-position': 'left center',
