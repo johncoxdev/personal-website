@@ -25,7 +25,7 @@ export default function Home() {
             <a href='./my_resume.pdf' target='_blank'>
               <Image src="./Resume.svg" width="30" height="30" alt="Resume"/>
             </a>
-            <a href="mailto:john.cox0321@gmail.com" target='_blank' className='pl-3'>
+            <a href="mailto:john.cox0321@gmail.com" className='pl-3'>
               <Image src="./Email.svg" width="30" height="30" alt="Email"/>
             </a>
             <a href="https://github.com/programwithjohn/" target='_blank' className='pl-3'>
