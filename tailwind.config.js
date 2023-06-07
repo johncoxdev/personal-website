@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'stars': 'url(/big_background.png)'
+      },
       blur: {
         '4xl': '72px', 
         '5xl': '152px',
@@ -38,8 +41,19 @@ module.exports = {
       },
       animation: {
         'animate-text': 'animate-text 3s ease-out infinite',
+        'animate-ping': 'animate-ping 5s cubic-bezier(0, 0, 0.2, 1) infinite'
       },
       keyframes: {  
+        'animate-ping': {
+          '0%, 100%': {
+            'transform': 'scale(2)',
+            'opacity': '0'
+          },
+          '50%': {
+            'transform': 'scale(1)',
+            'opacity': '1'
+          }
+        },
         'animate-text': {
           '0%, 100%': {
             'background-size': '200% 200%',

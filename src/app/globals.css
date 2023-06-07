@@ -20,11 +20,9 @@
 body {
   cursor: url('../../public/cursor.png'), auto;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  overscroll-behavior: none;
 }
 
