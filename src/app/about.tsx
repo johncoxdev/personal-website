@@ -10,7 +10,7 @@ export default function Home() {
       <div className='absolute'>  
         <div className='flex justify-center'>
           <Image src="./Willow.svg" width="75" height="75" alt="Willow the Planet Logo"/>
-          <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue font-michroma bg-clip-text text-white text-4xl sm:text-5xl hover:text-transparent'>John Cox</p>
+          <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue font-michroma bg-clip-text text-white text-4xl sm:text-5xl hover:text-transparent'>About Me</p>
         </div>
           <HomeNavbar />
           <FooterIcon /> 
