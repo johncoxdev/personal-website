@@ -44,8 +44,7 @@ module.exports = {
       },
       animation: {
         'animate-text': 'animate-text 3s ease-out infinite',
-        'animate-ping': 'animate-ping 5s cubic-bezier(0, 0, 0.2, 1) infinite',
-        'animate-underline': 'animate-underline 1s ease-out'
+        'animate-ping': 'animate-ping 5s cubic-bezier(0, 0, 0.2, 1) infinite'
       },
       keyframes: {  
         'animate-ping': {
@@ -68,14 +67,6 @@ module.exports = {
             'background-position': 'right center',
           },
         },
-        'animate-underline': {
-          '0%': {
-            'width': '0%'
-          },
-          '100%': {
-            'width': '100%'
-          }
-        }
       },
     },
   },

@@ -1,3 +1,4 @@
+import NebulaEffect from "@/components/NebulaEffect";
 import Link from "next/link";
 
 export default function Page404() {
@@ -8,9 +9,9 @@ export default function Page404() {
       </div>
       <div className="mt-4">
         <p className="block">
-          Return to{" "}
-          <Link href="/">
-            Home
+          Return to {" "}
+          <Link href="/" className="text-dark-babyblue">
+             Home
           </Link>
         </p>
       </div>
