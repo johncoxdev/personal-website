@@ -3,11 +3,11 @@ import Link from "next/link";
 const NormalNavbar = () => {
   return (
     <nav className="pt-10 flex items-center justify-between">
-      <div className='flex pl-4'>
+      <div className='flex pl-4 font-michroma'>
           <img src="./Willow.svg" width="50" height="50" alt="Willow the Planet Logo"/>
-          <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue font-michroma bg-clip-text text-white text-3xl hover:text-transparent'>John Cox</p>
+          <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue  bg-clip-text text-white text-3xl hover:text-transparent'>John Cox</p>
       </div>
-      <ul className="flex text-white text-2xl font-exo pr-4">
+      <ul className="flex text-white text-2xl font-exo font-extralight pr-4">
         <li>
           <Link href={"/"}>
             <span className="cursor-custom group text-white transition-all duration-500 ease-in-out mx-6">
