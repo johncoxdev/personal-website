@@ -2,8 +2,12 @@ import Link from "next/link";
 
 const NormalNavbar = () => {
   return (
-    <nav className="flex justify-center">
-      <ul className="text-white text-2xl font-exo">
+    <nav className="pt-10 flex items-center justify-between">
+      <div className='flex pl-4'>
+          <img src="./Willow.svg" width="50" height="50" alt="Willow the Planet Logo"/>
+          <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue font-michroma bg-clip-text text-white text-3xl hover:text-transparent'>John Cox</p>
+      </div>
+      <ul className="flex text-white text-2xl font-exo pr-4">
         <li>
           <Link href={"/"}>
             <span className="cursor-custom group text-white transition-all duration-500 ease-in-out mx-6">
