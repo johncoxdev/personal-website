@@ -4,7 +4,7 @@ const NormalNavbar = () => {
   return (
     <nav className="pt-10 flex items-center justify-between">
       <div className='flex pl-4 font-michroma'>
-          <img src="./Willow.svg" width="50" height="50" alt="Willow the Planet Logo"/>
+          <img src="./Willow.svg" width="50" height="50" alt="Willow the Planet Logo" className="hover:animate-bounce"/>
           <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue  bg-clip-text text-white text-3xl hover:text-transparent'>John Cox</p>
       </div>
       <ul className="flex text-white text-2xl font-exo font-extralight pr-4">

@@ -7,8 +7,12 @@ export default function About() {
       <NebulaEffect />
       <div className='absolute w-full'>
         <NormalNavbar />
-        <div>
-          <p className='text-white font-michroma text-3xl'>About Me</p>
+      </div>
+      <div className='flex flex-col items-center justify-center min-h-screen'>
+          <div className='flex justify-center'>
+        <div className='absolute'>
+              <p className='text-white font-michroma text-3xl'>About Me</p>
+          </div>
         </div>
       </div>
     </main>
