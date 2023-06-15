@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      letterSpacing: {
+        'widestxl': '0.14em',
+        'widest2xl': '0.2em'
+      },
       cursor: {
         'custom': 'url(/cursor.png), auto'
       },
