@@ -4,7 +4,7 @@ import NormalNavbar from '@/components/NormalNavbar'
 
 export default function About() {
   return (
-    <main className="cursor-custom bg-cover bg-stars min-h-screen">
+    <main className="cursor-custom min-h-screen">
       <NebulaEffect />
       <div className='absolute w-full'>
         <NormalNavbar />

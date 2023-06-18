@@ -21,6 +21,11 @@ body {
   background-color: black;
   cursor: url('../../public/cursor.png'), auto;
   color: rgb(var(--foreground-rgb));
-  overflow-x: hidden;
+}
+
+main {
+  background-image: url("/big_background.png");
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
