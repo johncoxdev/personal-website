@@ -23,9 +23,3 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
-main {
-  background-image: url("/big_background.png");
-  background-size: cover;
-  background-repeat: repeat-y;
-}
-
