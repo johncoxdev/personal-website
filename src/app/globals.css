@@ -20,9 +20,6 @@
 body {
   cursor: url('../../public/cursor.png'), auto;
   color: rgb(var(--foreground-rgb));
-  overflow: hidden;
-  touch-action: none;
-  user-select: none;
-  overscroll-behavior: none;
+  overflow-x: hidden;
 }
 

@@ -5,8 +5,8 @@ import NormalNavbar from '@/components/NormalNavbar'
 export default function About() {
   return (
     <main className="cursor-custom bg-stars bg-cover min-h-screen">
-      <NebulaEffect />
-      <div className='absolute w-full'>
+      {/* <NebulaEffect /> */}
+      <div className='w-auto sm:w-full'>
         <NormalNavbar />
         <div className='flex flex-col items-center justify-center'>
           <p className='flex items-center justify-center text-white font-michroma text-4xl underline underline-offset-8 pt-16'>ABOUT</p>
@@ -39,9 +39,7 @@ export default function About() {
             </div>
             {/* End of the description */}
           </div>
-          <div className='pt-4'>
             <FooterIcon/>
-          </div>
         </div>
       </div>
     </main>
