@@ -44,7 +44,8 @@ module.exports = {
         'babyblue': '#6CDBEA',
         'blurple': '#2703B8',
         'purple': '#751E9E',
-        'galactic-purple': '#30278F'
+        'galactic-purple': '#30278F',
+        'gradient-colors': 'linear-gradient(to right, red, blue)'
       },
       animation: {
         'animate-text': 'animate-text 3s ease-out infinite',
