@@ -4,17 +4,17 @@ import NormalNavbar from '@/components/NormalNavbar'
 
 export default function About() {
   return (
-    <main className="cursor-custom bg-stars bg-cover min-h-screen">
-      {/* <NebulaEffect /> */}
-      <div className='w-auto sm:w-full'>
+    <main className="cursor-custom bg-cover bg-stars min-h-screen">
+      <NebulaEffect />
+      <div className='absolute w-full'>
         <NormalNavbar />
         <div className='flex flex-col items-center justify-center'>
           <p className='flex items-center justify-center text-white font-michroma text-4xl underline underline-offset-8 pt-16'>ABOUT</p>
           {/* Start of the description */}
           <div className='md:flex justify-center'>
             <div className='w-56 h-16 pt-24 pr-4 '>
-              <p className='font-exo font-extralight text-white text-2xl tracking-widestxl'>Hello I'm John.</p>
-              <p className='font-exo font-thin text-white text-md'>I am student at the University of Houston. I have a love for web development & data science. During the day, I'm hard at work programming, and at night I stare at the night sky looking at the stars and beyond.</p>
+              <p className='font-exo font-extralight text-white text-2xl tracking-widestxl'>Hi, I'm John.</p>
+              <p className='font-exo font-thin text-white text-md'>I am a student at the University of Houston. I have a love for web development & data science. During the day, I'm hard at work programming, and at night I stare at the night sky looking at the stars and beyond.</p>
             </div>
             <img className='invisible md:visible' src="/line_sep.svg"></img>           
             <div className='pt-2'>
