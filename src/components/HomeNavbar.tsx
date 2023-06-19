@@ -3,7 +3,7 @@
   const HomeNavbar = () => {
     return (
       <nav className="flex text-center justify-center">
-        <ul className="sm:flex justify-center text-md font-black font-extralight sm:text-3xl pt-10">
+        <ul className="sm:flex justify-center text-xl my-1 font-black font-extralight sm:text-3xl pt-10">
           <li>
             <Link href={"/"}>
               <span className="cursor-custom group text-white transition-all duration-500 ease-in-out mx-6">
