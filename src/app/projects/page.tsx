@@ -20,7 +20,7 @@ const ProjectCard = (props: ProjectCardProps) => {
 
 export default function Projects() {
   return (
-    <main className="cursor-custom bg-stars bg-cover bg-round h-screen">
+    <main className="cursor-custom bg-stars bg-cover h-screen">
       <NebulaEffect />
       <div className='absolute w-full'>
         <NormalNavbar />
