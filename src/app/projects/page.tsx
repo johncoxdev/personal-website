@@ -15,7 +15,6 @@ const ProjectCard = (props: ProjectCardProps) => {
       {props.children}
     </li>
   )
-
 }
 
 export default function Projects() {

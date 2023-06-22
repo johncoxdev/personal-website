@@ -7,25 +7,25 @@ export const projects = [
     },
     {
         name: "Theme Park Website",
-        date_completed: "April 23'",
+        date_completed: "Apr. 23'",
         url: "https://github.com/programwithjohn/Amusment_Frontend",
         icons: ["mysql", "nodejs", "javascript"]
     },
     {
         name: "Hekima RPG",
-        date_completed: "Jan 23'",
+        date_completed: "Jan. 23'",
         url: "https://github.com/programwithjohn/Hekima-RPG-Discord-Bot",
         icons: ["sequelize", "javascript", "googlecloud", "discord"]
     },
     {
         name: "Alone",
-        date_completed: "July 22'",
+        date_completed: "Jul. 22'",
         url: "https://github.com/programwithjohn/Alone",
         icons: ["python"]
     },
     {
         name: "Recent Logins",
-        date_completed: "March 21'",
+        date_completed: "Mar. 21'",
         url: "https://github.com/programwithjohn/RecentLoginsCamera",
         icons: ["opencv", "python"]
     }   
