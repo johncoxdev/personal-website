@@ -31,10 +31,10 @@ export default function ImageSlider({ images }: CarouselProps) {
     <div className="flex flex-row justify-center items-center">
       <AiOutlineLeft
         onClick={handlePrevSlide}
-        className="cursor-custom text-5xl text-dark-babyblue mr-4"
+        className="cursor-custom text-5xl text-dark-babyblue mr-4 select-none"
       />
 
-      <div className="w-40 h-64 md:w-72 md:h-96">
+      <div className="w-40 h-64 md:w-72 md:h-96 select-none">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -47,7 +47,7 @@ export default function ImageSlider({ images }: CarouselProps) {
                       key={image.id}
                       src={image.src}
                       alt={image.alt}
-                      className="animate-fadeIn"
+                      className="animate-fadeIn select-none"
                     />
                 </a>
               );
@@ -58,7 +58,7 @@ export default function ImageSlider({ images }: CarouselProps) {
       </div>
       <AiOutlineRight
         onClick={handleNextSlide}
-        className="cursor-custom text-5xl text-dark-babyblue ml-4"
+        className="cursor-custom text-5xl text-dark-babyblue ml-4 select-none"
       />
     </div>
   );
