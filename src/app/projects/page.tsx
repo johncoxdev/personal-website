@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard = (props: ProjectCardProps) => {
   return (
-    <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105'>
+    <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
       {props.children}
     </li>
   )

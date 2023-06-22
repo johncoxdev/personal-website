@@ -35,56 +35,93 @@ export default function ImageSlider({ images }: CarouselProps) {
   };
 
   return (
-    <div className="relative">
-      <AiOutlineLeft
-        onClick={handlePrevSlide}
-        className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
-      <div className="w-full h-[50vh] flex overflow-hidden relative m-auto">
-        <Swipe
-          onSwipeLeft={handleNextSlide}
-          onSwipeRight={handlePrevSlide}
-          className="relative z-10 w-full h-full"
-        >
-          {images.map((image, index) => {
-            if (index === currentSlide) {
-              return (
-                <a href={image.src} target="_blank">
-                    <img
-                      key={image.id}
-                      src={image.src}
-                      alt={image.alt}
-                      className="animate-fadeIn"
-                    />
-                </a>
-              );
-            }
-            return null;
-          })}
-        </Swipe>
-      </div>
-      <AiOutlineRight
-        onClick={handleNextSlide}
-        className="absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
+    <div className="flex flex-col">
+      <div className="flex flex-row">
+        <AiOutlineLeft
+          onClick={handlePrevSlide}
+          className="justify-center items-center cursor-custom text-4xl text-dark-babyblue"
+        />
 
-      <div className="relative flex justify-center p-2">
-        {images.map((_, index) => {
-          return (
-            <div
-              className={
-                index === currentSlide
-                  ? "h-4 w-4 bg-gray-700 rounded-full mx-2 mb-2 cursor-pointer"
-                  : "h-4 w-4 bg-gray-300 rounded-full mx-2 mb-2 cursor-pointer"
+        <div className="w-40 h-60">
+          <Swipe
+            onSwipeLeft={handleNextSlide}
+            onSwipeRight={handlePrevSlide}
+            className=""
+            // className="z-10 w-full h-full lg:w-56 lg:h-96"
+          >
+            {images.map((image, index) => {
+              if (index === currentSlide) {
+                return (
+                  <a href={image.src} target="_blank" >
+                      <img
+                        key={image.id}
+                        src={image.src}
+                        alt={image.alt}
+                        className="animate-fadeIn"
+                      />
+                  </a>
+                );
               }
-              key={index}
-              onClick={() => {
-                setCurrentSlide(index);
-              }}
-            />
-          );
-        })}
+              return null;
+            })}
+          </Swipe>  
+        </div>
+
+
+        <AiOutlineRight
+          onClick={handleNextSlide}
+          className="justify-center items-center cursor-custom text-4xl text-dark-babyblue"
+        />
       </div>
     </div>
   );
 }
+
+
+
+// {/* <div className="w-full h-[50vh] overflow-hidden scale-50">
+//         {/* <div className="w-full h-[50vh] flex overflow-hidden relative m-auto"> */}
+//           <Swipe
+//             onSwipeLeft={handleNextSlide}
+//             onSwipeRight={handlePrevSlide}
+//             className=""
+//             // className="z-10 w-full h-full lg:w-56 lg:h-96"
+//           >  
+//             {images.map((image, index) => {
+//               if (index === currentSlide) {
+//                 return (
+//                   <a href={image.src} target="_blank" >
+//                       <img
+//                         key={image.id}
+//                         src={image.src}
+//                         alt={image.alt}
+//                         className="animate-fadeIn"
+//                       />
+//                   </a>
+//                 );
+//               }
+//               return null;
+//             })}
+//           </Swipe>
+//         </div>
+//       </div>
+
+//       <div className="">
+//       {/* <div className="relative flex justify-center p-2"> */}
+//         {images.map((_, index) => {
+//           return (
+//             <div
+//               className={
+//                 index === currentSlide
+//                   ? "h-4 w-4 bg-gray-700 rounded-full mx-2 mb-2 cursor-pointer"
+//                   : "h-4 w-4 bg-gray-300 rounded-full mx-2 mb-2 cursor-pointer"
+//               }
+//               key={index}
+//               onClick={() => {
+//                 setCurrentSlide(index);
+//               }}
+//             />
+//           );
+//         })}
+//       </div>
+//     </div> */}

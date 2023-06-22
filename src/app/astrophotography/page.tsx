@@ -56,20 +56,17 @@ export default function Projects() {
     return (
         
         <main className="cursor-custom bg-stars bg-cover h-screen">
-            <ImageSlider images={img} />
-            {/* <NebulaEffect />
+            <NebulaEffect />
             <div className='absolute w-full'>
                 <NormalNavbar />
                 <div className='flex flex-col items-center justify-center'>
                     <p className='flex items-center justify-center text-white font-michroma text-lg underline underline-offset-8 pt-16 md:text-4xl'>ASTROPHOTOGRAPHY</p>
-                    <section>
-                        <div>
-                            
-                        </div>
-                    </section>
+                    <div className='mt-10'>
+                        <ImageSlider images={img} />
+                    </div>
                     <FooterIcon />
                 </div>
-            </div> */}
+            </div>
         </main>
     )
 }
