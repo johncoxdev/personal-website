@@ -2,6 +2,7 @@ import FooterIcon from '@/components/FooterIcon'
 import NebulaEffect from '@/components/NebulaEffect'
 import NormalNavbar from '@/components/NormalNavbar'
 import ImageSlider from '@/components/ImageSlider'
+import { entries } from '@/components/Entries'
 import Link from 'next/link'
 
 const img = [
@@ -47,6 +48,19 @@ const img = [
     },
 ]
 
+interface DateCardProps {
+  key: number;
+  children: React.ReactNode;
+}
+
+const DateCard = (props: DateCardProps) => {
+  return (
+    <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
+      {props.children}
+    </li>
+  )
+}
+
 export default function Astrophotography() {
     return (
         <main className="cursor-custom bg-stars bg-cover h-screen">
@@ -60,41 +74,19 @@ export default function Astrophotography() {
                     </div>
                     <div className='md:mt-6'>
                         <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4'>
-                          <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
-                            <div className='flex flex-col justify-center items-center mx-8 my-4 md:mx-10 md:my-6'>
-                              <Link href={"/entry"}>
-                                <span className='font-exo text-white text-lg font-semibold'>3.26.23</span>
-                              </Link>
-                            </div>
-                          </li>
-                          <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
-                            <div className='flex flex-col justify-center items-center md:mx-10 md:my-6'>
-                              <Link href={"/entry"}>
-                                <span className='font-exo text-white text-lg font-semibold'>3-26-23</span>
-                              </Link>
-                            </div>
-                          </li>
-                          <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
-                            <div className='flex flex-col justify-center items-center md:mx-10 md:my-6'>
-                              <Link href={"/entry"}>
-                                <span className='font-exo text-white text-lg font-semibold'>3-26-23</span>
-                              </Link>
-                            </div>
-                          </li>
-                          <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
-                            <div className='flex flex-col justify-center items-center md:mx-10 md:my-6'>
-                              <Link href={"/entry"}>
-                                <span className='font-exo text-white text-lg font-semibold'>3-26-23</span>
-                              </Link>
-                            </div>
-                          </li>
-                          <li className='rounded-lg bg-gradient-to-b from-purple via-transparent to-dark-babyblue hover:scale-105 transition-all duration-500 ease-out'>
-                            <div className='flex flex-col justify-center items-center md:mx-10 md:my-6'>
-                              <Link href={"/entry"}>
-                                <span className='font-exo text-white text-lg font-semibold'>3-26-23</span>
-                              </Link>
-                            </div>
-                          </li>
+                          {
+                            entries.map((entries, ind) => {
+                              return (
+                                <DateCard key={ind}>
+                                  <div className='flex flex-col justify-center items-center mx-8 my-4 md:mx-10 md:my-6'>
+                                    <Link href={entries.dirpath}>
+                                      <span className='font-exo text-white text-lg font-semibold'>{entries.date}</span>
+                                    </Link>
+                                  </div>
+                                </DateCard>
+                              )
+                            })
+                          }
                         </ul>
                     </div>
                     <FooterIcon />
