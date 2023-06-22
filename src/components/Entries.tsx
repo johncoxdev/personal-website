@@ -5,22 +5,22 @@ export const entries = [
   },
   {
     date: "1.6.23",
-    dirpath: "/entry/entry2"
+    dirpath: "/entry2"
   },
   {
     date: "2.4.23",
-    dirpath: "/entry/entry3"
+    dirpath: "/entry3"
   },
   {
     date: "3.4.23",
-    dirpath: "/entry/entry4"
+    dirpath: "/entry4"
   },
   {
     date: "3.25.23",
-    dirpath: "/entry/entry5"
+    dirpath: "/entry5"
   },
   {
     date: "6.2.23",
-    dirpath: "/entry/entry6"
+    dirpath: "/entry6"
   },
 ]
