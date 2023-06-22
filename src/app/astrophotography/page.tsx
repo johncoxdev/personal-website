@@ -19,7 +19,6 @@ const DateCard = (props: DateCardProps) => {
 
 }
 
-export default function Projects() {
     const img = [
         {
             id: "1",
@@ -51,8 +50,19 @@ export default function Projects() {
             src: "./3-26-23/img6.png",
             alt: "image 6"
         },
-
+        {
+            id: "8",
+            src: "./3-26-23/img8.png",
+            alt: "image 8"
+        },
+        {
+            id: "8",
+            src: "./3-26-23/img8.png",
+            alt: "image 8"
+        },
     ]
+
+export default function Astrophotography() {
     return (
         
         <main className="cursor-custom bg-stars bg-cover h-screen">
@@ -63,6 +73,13 @@ export default function Projects() {
                     <p className='flex items-center justify-center text-white font-michroma text-lg underline underline-offset-8 pt-16 md:text-4xl'>ASTROPHOTOGRAPHY</p>
                     <div className='mt-10'>
                         <ImageSlider images={img} />
+                    </div>
+                    <div>
+                        <ul className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
+                          <Link>
+                            <span className='font-exo text-white text-lg font-semibold'>3-26-23</span>
+                          </Link>
+                        </ul>
                     </div>
                     <FooterIcon />
                 </div>
