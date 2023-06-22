@@ -10,7 +10,7 @@ export const images = {
   },
   {
     id: "2",
-    src: "./entry_images/6-2-23/1.png",
+    src: "./entry_images/2-4-23/3.gif",
     alt: "image_not_loaded"
   },
   {
