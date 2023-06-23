@@ -24,15 +24,15 @@ export default function Projects() {
       <div className='absolute w-full'>
         <NormalNavbar />
         <div className='flex flex-col items-center justify-center'>
-          <p className='flex items-center justify-center text-white font-michroma text-4xl underline underline-offset-8 pt-16'>PROJECTS</p>
+          <p className='flex items-center justify-center text-white font-michroma text-2xl sm:text-4xl underline underline-offset-8 pt-16'>PROJECTS</p>
           <div className='justify-center'>
-            <ul className='mt-16 grid grid-cols-1 lg:grid-cols-3 gap-4'>
+            <ul className='mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
               {
                 projects.map((project, ind) => {
                   return (
                     <ProjectCard key={ind}>
                       <Link href={project.url} target="_blank" className='cursor-custom'>
-                        <div className='flex flex-col justify-center items-center mx-14 my-8'>
+                        <div className='flex flex-col justify-center items-center mx-9 my-6 sm:mx-14 sm:my-8 '>
                           <span className='font-exo text-white text-lg font-semibold'>{project.name}</span>
                           <span className='font-exo text-white text-lg font-extralight'>{project.date_completed}</span>
                             <div className='flex mt-1'>
