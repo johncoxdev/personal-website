@@ -5,6 +5,7 @@ import ImageSlider from '@/components/ImageSlider'
 import { entries } from '@/components/Entries'
 import Link from 'next/link'
 import { images } from '@/components/Images'
+import React from 'react'
 
 
 interface DateCardProps {
@@ -29,7 +30,7 @@ export default function Astrophotography() {
                 <div className='flex flex-col items-center justify-center'>
                     <p className='flex items-center justify-center text-white font-michroma text-lg underline underline-offset-8 pt-16 md:text-4xl'>ASTROPHOTOGRAPHY</p>
                     <div className='mt-10'>
-                        <ImageSlider images={images['showcase']} />
+                      <ImageSlider images={images['showcase']} />
                     </div>
                     <div className='flex flex-col'>
                       <p className='mt-2 font-exo font-semibold text-white text-2xl'>Entries:</p>

@@ -41,9 +41,8 @@ export default function ImageSlider({ images }: CarouselProps) {
           {images.map((image, index) => {
             if (index === currentSlide) {
               return (
-                <a href={image.src} target="_blank" >
+                <a href={image.src} target="_blank" key={image.id}>
                     <img
-                      key={image.id}
                       src={image.src}
                       alt={image.alt}
                       className="animate-fadeIn select-none"
