@@ -16,9 +16,9 @@ const NormalNavbar = () => {
       <div className="flex justify-between">
         <div className="flex">
           <div>
-            <img src="./Willow.svg" width="50" height="50" alt="Willow the Planet Logo" className="hover:animate-bounce"/>
+            <img src="./Willow.svg" width="50" height="50" alt="Willow the Planet Logo" className="hover:animate-bounce invisible sm:visible"/>
           </div>
-          <p className='font-michroma text-md font-semibold animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue bg-clip-text text-white hover:text-transparent lg:text-3xl'>John Cox</p>
+          <p className='font-michroma text-md font-semibold animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue bg-clip-text text-white hover:text-transparent lg:text-3xl invisible sm:visible'>John Cox</p>
         </div>
         {/* This is the navbar + hitbox */}
         <div className="flex">

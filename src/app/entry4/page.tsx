@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Entry2() {
+export default function Entry4() {
   return (
     <main className="cursor-custom bg-stars bg-cover min-h-screen">
       <div className="flex flex-col items-center justify-center min-h-screen">
