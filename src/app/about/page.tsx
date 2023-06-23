@@ -23,9 +23,9 @@ export default function About() {
                 <li className='my-11'>
                   <Link href="https://uhcode.red/" target="_blank">
                     <span className="flex flex-col cursor-custom group text-white transition-all duration-500 ease-in-out">
-                      <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                      Logistics Executive - CodeRED
-                      </span>
+                      <p>
+                        <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Logistics Executive - CodeRED</span>
+                      </p>
                       <span className='font-exo font-thin text-white text-md'>February 2022 - Present</span>
                     </span>
                   </Link>
@@ -33,9 +33,9 @@ export default function About() {
                 <li className='my-11'>
                   <Link href="https://cougarcs.com/" target="_blank">
                     <span className="flex flex-col cursor-custom group text-white transition-all duration-500 ease-in-out">
-                      <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                      Director of Socials - CougarCS
-                      </span>
+                      <p>
+                        <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Director of Socials - CougarCS</span>
+                      </p>
                       <span className='font-exo font-thin text-white text-md'>December 2022 - Present</span>
                     </span>
                   </Link>
@@ -43,9 +43,9 @@ export default function About() {
                 <li className='my-11'>
                 <Link href="https://cougarcs.com/" target="_blank">
                     <span className="flex flex-col cursor-custom group text-white transition-all duration-500 ease-in-out">
-                      <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                      Web Dev Committee - CougarCS
-                      </span>
+                      <p>
+                        <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">Web Dev Committee - CougarCS</span>
+                      </p>
                       <span className='font-exo font-thin text-white text-md'>December 2022 - January 2023</span>
                     </span>
                   </Link>
@@ -53,9 +53,10 @@ export default function About() {
                 <li className='my-11'>
                   <Link href="https://www.codecoogs.com/" target='_blank'>
                     <span className="flex flex-col cursor-custom group text-white transition-all duration-500 ease-in-out">
-                      <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-                      TeamLead - code[coogs]
-                      </span>
+                      <p>
+                        <span className="bg-left-bottom bg-gradient-to-r from-babyblue to-purple bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all 
+                      duration-500 ease-out">Team Lead - Code[Coogs]</span>
+                      </p>
                       <span className='font-exo font-thin text-white text-md'>August 2022 - January 2023</span>
                     </span>
                   </Link>
