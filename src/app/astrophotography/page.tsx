@@ -33,7 +33,12 @@ export default function Astrophotography() {
                       <ImageSlider images={images['showcase']} />
                     </div>
                     <div className='flex flex-col'>
-                      <p className='mt-2 font-exo font-semibold text-white text-2xl'>Entries:</p>
+                    <div className='flex items-center justify-center'>
+                        <span className='font-exo text-white text-sm'>
+                          Equipment: <br /> - Orion 130ST <br /> - Iphone 8+  <br /> - Eyepiece 0.06, 0.10, 0.25
+                        </span>
+                      </div>
+                      <p className='font-exo font-semibold text-white text-2xl'>Entries:</p>
                         <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4'>
                           {
                             entries.map((entries, ind) => {
