@@ -33,7 +33,7 @@ export default function ImageSlider({ images }: CarouselProps) {
         className="cursor-custom text-5xl text-dark-babyblue mr-4 select-none"
       />
 
-      <div className="w-40 h-64 md:w-72 md:h-96 select-none">
+      <div className="select-none">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -41,11 +41,11 @@ export default function ImageSlider({ images }: CarouselProps) {
           {images.map((image, index) => {
             if (index === currentSlide) {
               return (
-                <a href={image.src} target="_blank" key={image.id}>
+                <a href={image.src} target="_blank" key={image.id} className="justify-center">
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="animate-fadeIn select-none"
+                      className="animate-fadeIn select-none w-32 h-auto md:w-40"
                     />
                 </a>
               );
