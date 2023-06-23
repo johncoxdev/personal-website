@@ -62,7 +62,7 @@ const NormalNavbar = () => {
               </svg>
             </button>
           </div>
-            <div>
+          <div>
             <div className="hidden w-full lg:block lg:w-auto" id="navbar-default">
               <div className="font-exo font-extralight flex flex-row items-center text-2xl lg:justify-center">
                 <Link href={"/"}>

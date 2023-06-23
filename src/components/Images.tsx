@@ -85,7 +85,7 @@ export const images = {
   },
   {
     id: "3",
-    src: "./entry_images/2-4-23/3.mp4",
+    src: "./entry_images/2-4-23/3.gif",
     alt: "image_not_loaded"
   },],
 

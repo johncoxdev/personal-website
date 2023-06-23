@@ -5,6 +5,7 @@ import ImageSlider from '@/components/ImageSlider'
 import { entries } from '@/components/Entries'
 import Link from 'next/link'
 import { images } from '@/components/Images'
+import React from 'react'
 
 
 interface DateCardProps {
@@ -27,18 +28,23 @@ export default function Astrophotography() {
             <div className='absolute w-full'>
                 <NormalNavbar />
                 <div className='flex flex-col items-center justify-center'>
-                    <p className='flex items-center justify-center text-white font-michroma text-lg underline underline-offset-8 pt-16 md:text-4xl'>ASTROPHOTOGRAPHY</p>
+                    <p className='flex items-center justify-center text-white font-michroma text-md underline underline-offset-8 pt-16 md:text-4xl'>ASTROPHOTOGRAPHY</p>
                     <div className='mt-10'>
-                        <ImageSlider images={images['showcase']} />
+                      <ImageSlider images={images['showcase']} />
                     </div>
                     <div className='flex flex-col'>
-                      <p className='mt-2 font-exo font-semibold text-white text-2xl'>Entries:</p>
+                    <div className='flex items-center justify-center'>
+                        <span className='font-exo text-white text-sm'>
+                          Equipment: <br /> - Orion 130ST <br /> - Iphone 8+  <br /> - Eyepiece 0.06, 0.10, 0.25
+                        </span>
+                      </div>
+                      <p className='font-exo font-semibold text-white text-2xl'>Entries:</p>
                         <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4'>
                           {
                             entries.map((entries, ind) => {
                               return (
                                 <DateCard key={ind}>
-                                  <div className='flex flex-col justify-center items-center mx-8 my-4 md:mx-10 md:my-6'>
+                                  <div className='flex flex-col justify-center items-center mx-7 my-4 md:mx-10 md:my-6'>
                                     <Link href={entries.dirpath}>
                                       <span className='font-exo text-white text-lg font-semibold'>{entries.date}</span>
                                     </Link>
