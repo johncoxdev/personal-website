@@ -13,6 +13,14 @@ const exo = Exo({
   variable: '--exo'
 })
 
+export const metadata = {
+  title: 'John Cox',
+  description: 'John Cox website!',
+  openGraph: {
+    images: './opengraph-image.png',
+  },
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -20,11 +28,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>John Cox - Developer</title>
-        <meta property="og:image" content="<generated>" />
-        <meta name="og:title" content="John Cox - Developer"/>
-      </head>
       <body className={`${exo.variable} ${michroma.variable}`}>{children}</body>
     </html>
   )
