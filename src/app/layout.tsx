@@ -20,6 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>John Cox - Developer</title>
+        <meta property="og:image" content="/public/embed_image.png"/>
+        <meta name="og:title" content="John Cox - Developer"/>
+      </head>
       <body className={`${exo.variable} ${michroma.variable}`}>{children}</body>
     </html>
   )
