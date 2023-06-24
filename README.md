@@ -1,34 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to my website!
 
-## Getting Started
+## Creation
+The creation of this website took a long time, as I took many inspirations from many different people. Ulimately I wanted to create a space themed website that showcased my software development projects. I used Figma as my source of creating multiple designs for my website. Design 3 will ultimately be the deisgn I will go with, as I will continue to make changes to Design 3 as the way I love. But the main theme will be the same. You can check out my figma document [here](https://www.figma.com/file/udvwIWSfmnBeW8qu1gCugh/Website-Layouts?type=design&node-id=0%3A1&mode=design&t=dvj1Gl74b2Ua9HaH-1)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Techonolgies used for my Website
+![Nextjs](https://img.shields.io/badge/nextjs-%2320232a.svg?style=for-the-badge&logo=next.js&logoColor=%ffffff)  
+![tailwindcss](https://img.shields.io/badge/tailwindcss-%2320232a.svg?style=for-the-badge&logo=tailwindcss&logoColor=%2361DAFB)  
+![typescript](https://img.shields.io/badge/typescript-%2320232a.svg?style=for-the-badge&logo=typescript&logoColor=%2355eb)  
+![figma](https://img.shields.io/badge/figma-%2320232a.svg?style=for-the-badge&logo=figma&logoColor=%5c00d4)
