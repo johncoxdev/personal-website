@@ -15,7 +15,6 @@ const exo = Exo({
 
 export const metadata = {
   title: 'John Cox',
-  description: 'John Cox website!',
   openGraph: {
     images: './opengraph-image.png',
   },
