@@ -44,11 +44,11 @@ export default function Astrophotography() {
                             entries.map((entries, ind) => {
                               return (
                                 <DateCard key={ind}>
-                                  <div className='flex flex-col justify-center items-center mx-7 my-4 md:mx-10 md:my-6'>
-                                    <Link href={entries.dirpath}>
-                                      <span className='font-exo text-white text-lg font-semibold'>{entries.date}</span>
-                                    </Link>
-                                  </div>
+                                  <Link href={entries.dirpath} className='cursor-custom'>
+                                    <div className='flex flex-col justify-center items-center mx-7 my-4 md:mx-10 md:my-6'>
+                                        <span className='font-exo text-white text-lg font-semibold'>{entries.date}</span>
+                                    </div>
+                                  </Link>
                                 </DateCard>
                               )
                             })
