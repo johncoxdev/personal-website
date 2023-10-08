@@ -13,9 +13,6 @@ const FooterIcon = () => {
             <a href="https://www.linkedin.com/in/johncoxdev/" target='_blank' className='pl-3'>
               <img src="./icon/Linkedin.svg" width="30" height="30" alt="LinkedIn"/>
             </a>
-            <a href="https://twitter.com/johncoxdev" target='_blank' className='pl-3'>
-              <img src="./icon/Twitter.svg" width="30" height="30" alt="Twitter"/>
-            </a>
         </div>
     )
 }
