@@ -35,7 +35,7 @@ export default function Astrophotography() {
                     <div className='flex flex-col'>
                     <div className='flex items-center justify-center'>
                         <span className='font-exo text-white text-sm'>
-                          Equipment: <br /> - Orion 130ST <br /> - Iphone 8+  <br /> - Eyepiece 0.06, 0.10, 0.25
+                          Equipment: <br /> - Orion 130ST <br /> - Iphone 14 Pro Max+  <br /> - Eyepiece 0.06, 0.10, 0.25
                         </span>
                       </div>
                       <p className='font-exo font-semibold text-white text-2xl'>Entries:</p>
