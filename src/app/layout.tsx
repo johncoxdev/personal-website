@@ -1,10 +1,10 @@
 import './globals.css'
-import { Michroma, Exo } from 'next/font/google'
+import { Exo, Julius_Sans_One } from 'next/font/google'
 
-const michroma = Michroma({ 
+const julius = Julius_Sans_One({ 
   subsets: ['latin'],
   weight: '400',
-  variable: '--michroma'
+  variable: '--julius'
 })
 
 const exo = Exo({
@@ -28,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${exo.variable} ${michroma.variable}`}>{children}</body>
+      <body className={`${exo.variable} ${julius.variable}`}>{children}</body>
     </html>
   )
 }

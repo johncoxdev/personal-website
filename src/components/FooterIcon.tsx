@@ -1,6 +1,6 @@
 const FooterIcon = () => {
     return (
-        <div className='flex justify-center mt-6 mb-4 sm:mt-10 sm:mb-0'>
+        <div className='flex z-20 justify-center'>
             <a href='./my_resume.pdf' target='_blank'>
               <img src="./icon/Resume.svg" width="30" height="30" alt="Resume"/>
             </a>

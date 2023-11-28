@@ -1,4 +1,3 @@
-import NebulaEffect from "@/components/NebulaEffect";
 import Link from "next/link";
 
 export default function Page404() {
