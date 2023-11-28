@@ -1,22 +1,22 @@
-import Image from 'next/image'
-import HomeNavbar from '@/components/HomeNavbar'
-import NebulaEffect from '@/components/NebulaEffect'
 import FooterIcon from '@/components/FooterIcon'
+import About from './about/page'
+import NormalNavbar from '@/components/NormalNavbar'
+import StarEffect from '@/components/StarEffect'
+import Projects from './projects/page'
+import Astrophotography from './astrophotography/page'
 
 export default function Home() {
   return (
-    <main className="cursor-custom bg-stars bg-cover min-h-screen">
-      <NebulaEffect />  
-      <div className="flex flex-col items-center justify-center min-h-screen">
-        <div className='absolute'>
-          <div className='flex justify-center items-center'>
-            <Image src="./Willow.svg" width="75" height="75" alt="Willow the Planet Logo" className='hover:animate-bounce'/>
-            <p className='animate-animate-text bg-gradient-to-r from-dark-babyblue via-babyblue via-blurple via-purple via-blurple via-babyblue to-dark-babyblue font-michroma bg-clip-text text-white text-3xl sm:text-5xl hover:text-transparent items-center justify-center'>John Cox</p>
-          </div>
-          <HomeNavbar />
-          <FooterIcon /> 
-        </div>
+    <main id="home" className="bg-gradient-to-r from-blue-black from-5% to-off-black min-h-screen">
+      <StarEffect />  
+      <NormalNavbar />
+      <div className='flex flex-col items-center justify-center min-h-screen'>
+        <p className='font-julius text-5xl sm:text-9xl text-light-orange'>John Cox</p>
+        <FooterIcon />
       </div>
+      <About />
+      <Projects / >
+      <Astrophotography />
     </main>
   )
 } 
