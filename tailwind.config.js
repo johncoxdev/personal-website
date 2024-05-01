@@ -105,7 +105,7 @@ module.exports = {
             'background-size': '200% 200%',
             'background-position': 'right center',
           },
-        },
+        }
       },
     },
   },
