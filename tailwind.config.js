@@ -62,11 +62,10 @@ module.exports = {
       },
       colors: {
         'black': '#000000',
-        'off-black': '#050505',
-        'dark-blue': '#030325',
+        'off-black': '#0B0B0B',
         'white': '#ffffff',
+        'gray': '#303030',
         'light-orange': '#FFE0B1',
-        'blue-black': '#0B0D16',
       },
       transitionDuration: {
         '1': '1000ms',
