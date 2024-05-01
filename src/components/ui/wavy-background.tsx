@@ -62,11 +62,11 @@ export const WavyBackground = ({
   };
 
   const waveColors = colors ?? [
-    "#0A3F3F",
-    "#120021",
-    "#13001F",
-    "#01002E",
-    "#002E2E"
+    "#000126",
+    "#000b26",
+    "#030026",
+    "#0a0026",
+    "#001226",
   ];
   const drawWave = (n: number) => {
     nt += getSpeed();

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 const StarEffect = () => {
   const [stars, setStars] = useState<JSX.Element[]>([]);
-  const randomStarAmount = Math.random() * 110 + 10;
+  const randomStarAmount = Math.random() * 75 + 10;
 
   useEffect(() => {
     const generateRandomStar = () => {
