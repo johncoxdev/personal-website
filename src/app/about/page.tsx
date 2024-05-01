@@ -17,7 +17,7 @@ const ExperienceCard = (props: ExperienceCardProps) => {
 
 const About: React.FC = () => {
   return (
-    <main id="about_page" className="bg-off-black shadow-[inset_0_24px_10px_rgba(0,0,0,0.4)] min-h-screen">
+    <main id="about_page" className="bg-off-black shadow-[inset_0_24px_12px_rgba(0,0,0,0.6)] min-h-screen">
       <section className='relative z-30 flex-col md:flex-row flex justify-center items-center text-white font-exo min-h-screen'>
         <div id="text_about_me" className="w-3/4 sm:80 xl:w-100 flex flex-col">
           <p className='font-extrabold tracking-widest'>{"Hello, I'm john"}</p>
