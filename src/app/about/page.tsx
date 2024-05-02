@@ -17,16 +17,19 @@ const ExperienceCard = (props: ExperienceCardProps) => {
 
 const About: React.FC = () => {
   return (
-    <main id="about_page" className="bg-off-black shadow-[inset_0_24px_12px_rgba(0,0,0,0.6)] min-h-screen">
-      <section className='relative z-30 flex-col md:flex-row flex justify-center items-center text-white font-exo min-h-screen'>
-        <div id="text_about_me" className="w-3/4 sm:80 xl:w-100 flex flex-col">
-          <p className='font-extrabold tracking-widest'>{"Hello, I'm john"}</p>
-          <p className='font-thin'>{"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazing at night."}</p>
-          <br></br>
-          <p className='font-julius'>{"\"Life would be tragic if it was weren't funny.\""}</p>
-          <p className='font-julius'>{"-Stephen Hawking"}</p>
+    <main id="about_page" className="bg-gradient-to-r from-blue-black from-5% to-off-black shadow-[inset_0_24px_12px_rgba(0,0,0,0.6)] min-h-screen">
+      <section className='z-30 flex justify-center items-center text-white font-exo min-h-screen'>
+        <div className="hidden sm:flex animate-rotate-planet absolute sm:float-right">
+          <img src="./planet.svg" width="750" height="750" alt="Planet"/>
         </div>
-        <div id='experience' className='pt-20 sm:pl-40 sm:pt-0 '>
+        <div id="text_about_me" className="z-20 w-3/4 sm:80 lg:w-100 flex flex-col">
+          <p className='text-xl font-bold tracking-widest'>{"Hello, I'm john"}</p>
+          <p className='text-xl font-thin'>{"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazing at night."}</p>
+          <br></br>
+          <p className='text-xl font-julius'>{"\"Life would be tragic if it was weren't funny.\""}</p>
+          <p className='text-xl font-julius'>{"-Stephen Hawking"}</p>
+        </div>
+        <div id='experience' className='z-20 pt-20 sm:pl-40 sm:pt-0 '>
           <p className='font-thin text-3xl'>Experience</p>
           <div>
             {

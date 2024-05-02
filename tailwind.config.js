@@ -62,10 +62,11 @@ module.exports = {
       },
       colors: {
         'black': '#000000',
-        'off-black': '#0B0B0B',
+        'off-black': '#050505',
+        'dark-blue': '#030325',
         'white': '#ffffff',
-        'gray': '#303030',
         'light-orange': '#FFE0B1',
+        'blue-black': '#0B0D16',
       },
       transitionDuration: {
         '1': '1000ms',
@@ -76,6 +77,8 @@ module.exports = {
       },
       animation: {
         'animate-text': 'animate-text 3s ease-out infinite',
+        "meteor-effect": "meteor 5s linear infinite",
+        "rotate-planet": "rotate-planet 100s linear infinite",
         'ping-1': `animate-ping 1s cubic-bezier(1, 0.5, 0.2, 1) infinite`,
         'ping-2': `animate-ping 2s cubic-bezier(1, 0.5, 0.2, 1) infinite`,
         'ping-3': `animate-ping 3s cubic-bezier(1, 0.5, 0.2, 1) infinite`,
@@ -105,6 +108,30 @@ module.exports = {
             'background-size': '200% 200%',
             'background-position': 'right center',
           },
+        },
+        'meteor': {
+          "0%": { 
+            transform: "rotate(215deg) translateX(0)",
+            opacity: "1" 
+          },
+          "70%": { 
+            opacity: "1" 
+          },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+        'rotate-planet': {
+          "0%": {
+            'transform': "rotate(0deg)"
+          },
+          "50%": {
+            'transform': "rotate(180deg)"
+          },
+          "100%": {
+            'transform': "rotate(360deg)"
+          }, 
         }
       },
     },
