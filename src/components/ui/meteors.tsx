@@ -13,7 +13,7 @@ export const Meteors = ({
 }) => {
   const meteors = new Array(number || 20).fill(true);
   const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight / 2;
+  const screenHeight = window.innerHeight / 4;
   return (
     <div className="relative">
       {meteors.map((el, idx) => (

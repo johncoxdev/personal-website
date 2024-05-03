@@ -44,7 +44,7 @@ const StarEffect = () => {
   }, []);
 
   return (
-    <div id="Star-Scatter" className='absolute z-10 min-h-screen w-full'>
+    <div id="Star-Scatter" className='fixed z-10 min-h-screen w-full'>
         {stars}
     </div>
   )
