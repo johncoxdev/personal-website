@@ -2,22 +2,6 @@ import ImageSlider from '@/components/ImageSlider'
 import { images } from '@/components/Images'
 import React from 'react'
 
-
-interface DateCardProps {
-  key: number;
-  children: React.ReactNode;
-}
-
-const DateCard = (props: DateCardProps) => {
-  return (
-    <li className='rounded-lg bg-gradient-to-b from-dark-blue to-off-black hover:scale-105 transition-all duration-500 ease-out'>
-      {props.children}
-    </li>
-  )
-}
-
-
-
 const Astrophotography: React.FC = () => {
   return (
     <main id="astrophotography_page" className='className="bg-gradient-to-r from-blue-black from-5% to-off-black min-h-screen"'>
