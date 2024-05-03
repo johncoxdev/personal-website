@@ -89,3 +89,13 @@ body {
   background-color: black;
   color: rgb(var(--foreground-rgb));
 }
+
+::-moz-selection {
+  color: rgb(255, 224, 177);
+  background: rgb(11, 13, 22);
+}
+
+::selection {
+  color: rgb(11, 13, 22);
+  background: rgb(255, 224, 177);
+}
