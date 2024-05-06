@@ -1,50 +1,51 @@
 import { experience } from "@/components/Experience";
-import Link from "next/link";
-
-interface ExperienceCardProps {
-  key: number;
-  children: React.ReactNode;
-}
-
-const ExperienceCard = (props: ExperienceCardProps) => {
-  return (
-    <li className="list-none flex items-center pt-5 hover:scale-105 transition-all duration-500">
-      <div className="h-0 w-0 border-t-[10px] border-l-[15px] border-b-[10px] border-solid border-t-transparent border-b-transparent border-l-light-orange pl-5"></div>
-      {props.children}
-    </li>
-  )
-}
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
 const About: React.FC = () => {
   return (
-    <main id="about_page" className="bg-gradient-to-r from-blue-black from-5% to-off-black min-h-screen">
-      <section className='relative z-30 flex-col md:flex-row flex justify-center items-center text-white font-exo min-h-screen'>
-        <div id="text_about_me" className="w-3/4 sm:80 xl:w-100 flex flex-col">
-          <p className='font-extrabold tracking-widest'>{"Hello, I'm john"}</p>
-          <p className='font-thin'>{"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazing at night."}</p>
-          <br></br>
-          <p className='font-julius'>{"\"Life would be tragic if it was weren't funny.\""}</p>
-          <p className='font-julius'>{"-Stephen Hawking"}</p>
-        </div>
-        <div id='experience' className='pt-20 sm:pl-40 sm:pt-0'>
-          <p className='font-thin text-3xl'>Experience</p>
-          <div>
-            {
-              experience.map((job, ind) => {
-                return (
-                  <ExperienceCard key={ind}>
-                    <div className="flex flex-col">
-                      <Link href={job.url} target="_blank">
-                        <p>{job.position} - {job.organization}</p>
-                      </Link>
-                      <p className="font-thin ">{job.date}</p>
-                    </div>
-                  </ExperienceCard>
-                )
-              })
-            }
+    <main id="about_page" className="bg-gradient-to-r from-blue-black from-5% to-off-black min-h-screen w-full">
+      <section className='flex flex-col sm:flex-row items-center justify-center text-white font-exo sm:min-h-screen'>
+
+        
+        <div className="z-20 sm:pr-20 flex flex-col justify-center items-center">
+          <img src="./me.svg" alt="Me" className="relative"/>
+          <div className="w-screen p-3 sm:p-0 sm:absolute justify-center items-center text-center sm:mt-[27rem] sm:w-96">
+            <p className='text-3xl font-bold tracking-widest'>
+              {"Hello, I'm John"}
+            </p>
+            <p className='text-lg font-thin'>
+              {"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazing at night."}
+            </p>
           </div>
         </div> 
+        <div className="z-20 sm:pl-40">
+          <Accordion type="single" collapsible className="w-screen p-3 sm:w-100 sm:p-0">
+            {experience.map((job, ind) => {
+              return (
+                  <AccordionItem value={String(ind)}>
+                    <AccordionTrigger>
+                        <div className="font-julius">{job.organization} | {job.position}</div>
+                        <div>{job.date}</div>
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <ul className="list-disc" key={Math.random()}>
+                        {job.description.map((desc) => <li className="ml-6 mt-1">{desc}</li>)}
+                      </ul>
+                      <br></br>
+                      <a href={job.url} target='_blank' className="group text-md float-right font-julius text-white transition duration-300 hover:text-light-orange">
+                        {">"} {job.organization} Website
+                      </a>
+                    </AccordionContent>
+                  </AccordionItem>
+              )
+            })}
+      </Accordion>
+        </div>
       </section>
     </main>
   )
