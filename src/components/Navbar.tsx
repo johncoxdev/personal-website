@@ -1,6 +1,6 @@
 const NormalNavbar = () => {
   return(
-    <nav className="hidden sm:flex z-50 absolute sm:pt-14 sm:pb-5 flex text-white font-julius sm:text-xl justify-evenly w-full">
+    <nav className="hidden lg:flex z-50 absolute sm:pt-14 sm:pb-5 flex text-white font-julius sm:text-xl justify-evenly w-full">
       <div className="flex justify-evenly w-full sm:w-6/12">
         <a href="#home">
           <span className="group text-white transition duration-300 hover:text-light-orange">

@@ -15,7 +15,7 @@ const PostPreview = (props: PostMetadata) => {
           <Link href={`/posts/${props.slug}`} className="border bg-black px-4 py-1 rounded-lg border-gray-500 text-gray-300 hover:text-light-orange hover:border-light-orange duration-300">
             Discover
           </Link>
-          <Meteors number={20} />
+          <Meteors number={7} />
         </div>
       </div>
     </div>
