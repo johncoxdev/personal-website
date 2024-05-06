@@ -19,7 +19,7 @@ const About: React.FC = () => {
               {"Hello, I'm John"}
             </p>
             <p className='text-lg font-thin'>
-              {"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazing at night."}
+              {"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazer at night."}
             </p>
           </div>
         </div> 
