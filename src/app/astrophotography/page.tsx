@@ -1,18 +1,20 @@
-import ImageSlider from '@/components/ImageSlider'
-import { images } from '@/components/Images'
-import React from 'react'
+import PostPreview from "@/components/PostPreview";
+import getPostMetadata from "@/components/getPostMetadata";
 
 const Astrophotography: React.FC = () => {
+
+  const postMetadata = getPostMetadata();
+  const postPreviews = postMetadata.map((post) => (
+    <PostPreview key={post.slug} {...post} />
+  ));
+
+
   return (
-    <main id="astrophotography_page" className='className="bg-gradient-to-r from-blue-black from-5% to-off-black min-h-screen"'>
-      <div className='relative z-30 flex flex-col items-center justify-center min-h-screen'>
-        <ImageSlider images={images['showcase']} />
-        <div className='flex items-center justify-center'>
-            <span className='font-exo text-white text-sm'>
-            Equipment: <br /> - Orion 130ST <br /> - Iphone 14 Pro Max  <br /> - Eyepiece 0.06, 0.10, 0.25 
-          </span>
-        </div>
+    <main id="astrophotography_page" className="bg-gradient-to-r from-blue-black from-5% to-off-black p-6">
+      <div className="text-center text-3xl font-julius text-white py-6 pb-20">
+        Astrophotography Entries
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">{postPreviews}</div>
     </main>
   )
 }

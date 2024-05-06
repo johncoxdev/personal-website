@@ -1,5 +1,3 @@
-"use client";
-
 import { cn } from "@/utils/cn";
 import clsx from "clsx";
 import React from "react";
@@ -12,10 +10,8 @@ export const Meteors = ({
   className?: string;
 }) => {
   const meteors = new Array(number || 20).fill(true);
-  const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight / 4;
   return (
-    <div className="relative">
+    <>
       {meteors.map((el, idx) => (
         <span
           key={"meteor" + idx}
@@ -25,13 +21,13 @@ export const Meteors = ({
             className
           )}
           style={{
-            top: Math.floor(Math.random() * (screenHeight - (-screenHeight)) + -screenHeight) + "px",
-            left: Math.floor(Math.random() * (screenWidth - (-screenWidth)) + -screenWidth) + "px",
+            top: 0,
+            left: Math.floor(Math.random() * (400 - -400) + -400) + "px",
             animationDelay: Math.random() * (0.8 - 0.2) + 0.2 + "s",
             animationDuration: Math.floor(Math.random() * (10 - 2) + 2) + "s",
           }}
-          ></span>
+        ></span>
       ))}
-    </div>
+    </>
   );
 };

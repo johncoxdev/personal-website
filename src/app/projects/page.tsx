@@ -3,10 +3,11 @@ import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid';
 
 const Projects: React.FC = () => {
   return(
+    <div id="project_page">
       <BentoGrid className="max-w-4xl mx-auto">
         {projects.map((item, i) => (
           <BentoGridItem
-          key={i}
+          key={Math.random()}
           title={item.name}
           url={item.url}
           description={item.description}
@@ -15,6 +16,7 @@ const Projects: React.FC = () => {
           />
         ))}
       </BentoGrid>
+    </div>
   )
 }
 

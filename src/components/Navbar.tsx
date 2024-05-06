@@ -16,7 +16,7 @@ const NormalNavbar = () => {
         </a>
         <a href="#project_page">
           <span className="group text-white transition duration-300 hover:text-light-orange">
-            Project
+            Projects
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-light-orange"></span>
           </span>
         </a>

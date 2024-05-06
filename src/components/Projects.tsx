@@ -19,6 +19,7 @@ export const projects = [
       name: "Portfolio Website",
       date_completed: "May '23",
       projectPath: './mockups/portfolio.png',
+      url: "https://github.com/johncoxdev/personal-website",
       icons: ["nextjs", "tailwind", "typescript", "figma"],
       description: "This website shows my personal side of me and my love for space. I created the website with the mind of my love for astronomy, and continued with that by including my handmade Willow the Saturn logo & much more."
   },

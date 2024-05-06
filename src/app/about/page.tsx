@@ -33,7 +33,7 @@ const About: React.FC = () => {
                         <div>{job.date}</div>
                     </AccordionTrigger>
                     <AccordionContent>
-                      <ul className="list-disc">
+                      <ul className="list-disc" key={Math.random()}>
                         {job.description.map((desc) => <li className="ml-6 mt-1">{desc}</li>)}
                       </ul>
                       <br></br>

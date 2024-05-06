@@ -84,6 +84,12 @@
   width:0px;
 }
 
+html {
+    background-image: linear-gradient(to right, rgba(11, 13, 22, 1) 5%, rgba(5, 5, 5, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 body {
   background-color: black;
