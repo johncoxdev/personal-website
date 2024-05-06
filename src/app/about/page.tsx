@@ -13,7 +13,7 @@ const About: React.FC = () => {
 
         
         <div className="z-20 sm:pr-20 flex flex-col justify-center items-center">
-          <img src="./me.svg" alt="Me" className="relative"/>
+          <img src="./Me.svg" alt="Me" className="relative"/>
           <div className="w-screen p-3 sm:p-0 sm:absolute justify-center items-center text-center sm:mt-[27rem] sm:w-96">
             <p className='text-3xl font-bold tracking-widest'>
               {"Hello, I'm John"}
