@@ -9,10 +9,9 @@ import {
 const About: React.FC = () => {
   return (
     <main id="about_page" className="bg-gradient-to-r from-blue-black from-5% to-off-black min-h-screen w-full">
-      <section className='flex flex-col sm:flex-row items-center justify-center text-white font-exo sm:min-h-screen'>
-
+      <section className='flex flex-col lg:flex-row items-center justify-center text-white font-exo sm:min-h-screen'>
         
-        <div className="z-20 sm:pr-20 flex flex-col justify-center items-center">
+        <div className="z-20 lg:pr-20 flex flex-col justify-center items-center">
           <img src="./Me.svg" alt="Me" className="relative"/>
           <div className="w-screen p-3 sm:p-0 sm:absolute justify-center items-center text-center sm:mt-[27rem] sm:w-96">
             <p className='text-3xl font-bold tracking-widest'>
@@ -22,8 +21,9 @@ const About: React.FC = () => {
               {"I'm a computer science major, minoring in mathematics at the University of Houston. I have a love for software developing & astronomy. I'm programming by day and a star gazer at night."}
             </p>
           </div>
+
         </div> 
-        <div className="z-20 sm:pl-40">
+        <div className="z-20 mt-20 lg:pl-40">
           <Accordion type="single" collapsible className="w-screen p-3 sm:w-100 sm:p-0">
             {experience.map((job, ind) => {
               return (
