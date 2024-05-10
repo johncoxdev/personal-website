@@ -4,8 +4,8 @@ export const projects = [
     date_completed: "May. '24",
     projectPath: './mockups/fueltility.png',
     url: "https://github.com/Team-We-are-Cooking/fueltility",
-    icons: ["nextjs", "tailwind", "typescript", "figma"], //TODO: Need to add Supabase & Go
-    description: "Have you ever wanted to keep track of who logged onto your device? Well now you can! Recent logins automatically take a picture when the user logs into your device. It places the images inside it's own folder with time and date of the log in."
+    icons: ["nextjs", "tailwind", "typescript", "figma", "go", "supabase"],
+    description: "Fueltility is a simple full stack application that allows the user to be able to gather information for fuel quotes that are needed for the user to gain a profit from."
   },
   {
     name: "bloom",

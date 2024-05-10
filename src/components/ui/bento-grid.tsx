@@ -22,22 +22,24 @@ export const BentoGrid = ({
 export const BentoGridItem = ({
   className,
   url,
+  completion,
   title,
   description,
   header,
-  icon,
+  icons,
 }: {
   className?: string;
   url?: string;
+  completion?: string
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
-  icon?: React.ReactNode;
+  icons: string[];
 }) => {
   return (
       <a
         className={cn(
-          "z-20 row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input p-4 bg-blue-black border border-transparent justify-between flex flex-col space-y-4",
+          "z-20 h-full row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input p-4 bg-blue-black border border-transparent justify-between flex flex-col space-y-4",
           className
         )}
         href={url}
@@ -45,12 +47,19 @@ export const BentoGridItem = ({
       >
         {header}
         <div className="group-hover/bento:translate-x-2 transition duration-200">
-          {icon}
-          <div className="font-sans font-bold text-white mb-2 mt-2">
-            {title}
+          <div className="font-sans flex justify-between font-bold text-white mb-2 mt-2">
+            <p>{title}</p>
+            <p className="font-julius font-normal">{completion}</p>
           </div>
           <div className="font-sans font-normal text-stone-100 text-xs">
             {description}
+          </div>
+          <div className="flex items-center space-x-3 mt-1">
+            {icons.map((icon, id) => {
+              return(
+                <img key={Math.random()} src={`./project_icon/${icon}.svg`} width="20" height="20" alt={`${icon}`}/>
+              )
+            })}
           </div>
         </div>
       </a>
